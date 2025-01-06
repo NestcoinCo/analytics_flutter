@@ -143,7 +143,7 @@ class AnalyticsPlugin : FlutterPlugin, NativeContextApi, EventChannel.StreamHand
                 NativeContext(
                     app = NativeContextApp(
                         build = appBuild,
-                        name = packageInfo.applicationInfo.loadLabel(
+                        name = packageInfo.applicationInfo?.loadLabel(
                             packageManager
                         ).toString(),
                         namespace = packageInfo.packageName,
